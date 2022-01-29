@@ -5,17 +5,15 @@ public class Main {
     public static void main(String[] args) {
         Human student = new Human("Gaweł", "Grabowski", 30);
         Human teacher = new Human("Adam", "Małysz", 45);
-        System.out.println("---------------------------------------------");
+        Car Subaru = new Car("Legacy", "Subaru", "Black","2005");
+        Subaru.value = 100.00;
         student.setSalary(0.0);
-        System.out.println("---------------------------------------------");
-        System.out.println(student.getSalary());
-        System.out.println("---------------------------------------------");
-        student.setSalary(-1.0);
-        System.out.println("---------------------------------------------");
-        System.out.println(student.getSalary());
-        System.out.println("---------------------------------------------");
-        student.setSalary(100.0);
-        System.out.println("---------------------------------------------");
-        System.out.println(student.getSalary());
+        student.setCar(Subaru);
+        System.out.println("---------------------------------------------------");
+        student.setSalary(50.0);
+        student.setCar(Subaru);
+        System.out.println("---------------------------------------------------");
+        student.setSalary(200.0);
+        student.setCar(Subaru);
     }
 }

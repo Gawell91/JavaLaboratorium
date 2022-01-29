@@ -6,7 +6,7 @@ public class Human {
     public String lastName;
     public Integer age;
     public Animal pet;
-    public Car car;
+    private Car car;
     public Double salary;
 
     public Human(String firstName, String lastName, Integer age) {
@@ -31,13 +31,26 @@ public class Human {
     public void setSalary(Double salary) {
         if (salary <= 0) {
             System.out.println("Nie sądze, nie bede robil za darmo, a tym bardziej doplacal");
-        }
-        else
-        {
+        } else {
             System.out.println("Nowe dane zostaly wyslane do systemu ksiegowego");
             System.out.println("Proszę odebrac aneks w dziale kadr");
             System.out.println("ZUS i US został poinformowany o zmianie wypłaty");
             this.salary = salary;
+        }
+    }
+    private Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if (salary > this.car.value) {
+            this.car = this.car;
+            System.out.println("Udało sie kupić auto za gotówkę!");
+        } else if (salary > (this.car.value / 12)) {
+            this.car = this.car;
+            System.out.println("Udało się kupić auto na kredyt!");
+        } else {
+            System.out.println("Nie udało się kupić auta, za mało zarabiasz");
         }
     }
 }
