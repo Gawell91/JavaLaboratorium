@@ -5,7 +5,6 @@ public class Human {
     public String lastName;
     public Integer age;
     public Animal pet;
-
     public Human(String firstName, String lastName, Integer age){
         this.firstName = firstName;
         this.lastName = lastName;

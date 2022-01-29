@@ -21,7 +21,6 @@ public class Main {
         cat.takeForAWalk();
         cat.takeForAWalk();
         cat.takeForAWalk();
-        cat.takeForAWalk();
         System.out.println("----------------------------------------------");
         student.setPet(dog);
         System.out.println(student.getPet().species);

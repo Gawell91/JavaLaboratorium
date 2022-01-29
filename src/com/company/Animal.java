@@ -7,7 +7,6 @@ public class Animal {
     private static final Double DEFAULT_DOG_WEIGHT = 7.0;
     private static final Double DEFAULT_WEIGHT = 1.0;
     Boolean isAlive;
-
     public Animal(String species){
             this.isAlive = true;
             this.species = species;

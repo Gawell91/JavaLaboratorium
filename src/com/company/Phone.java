@@ -6,7 +6,6 @@ public class Phone {
     public String os;
     public String colour;
     public Integer ramSize;
-
     public Phone(String model, Double screenSize, String os, String colour, Integer ramSize){
         this.model = model;
         this.screenSize = screenSize;
