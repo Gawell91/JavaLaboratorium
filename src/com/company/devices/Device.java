@@ -12,9 +12,10 @@ public abstract class Device {
         this.yearOfProduction = yearOfProduction;
         this.colour = colour;
     }
-    public abstract void turnOn;
 
     public String toString(){
         return " ";
     }
+
+    public abstract void turnOn();
 }

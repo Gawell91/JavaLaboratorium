@@ -10,8 +10,8 @@ public class Car extends Device {
         this.engineVolume = 2.0;
         this.value = 0.0;
         this.plates = "CBR 18MX";
-        @Override
-        public void (){
+        //@Override
+        public void turnOn(){
             System.out.println("Przekrecam kluczyk");
             System.out.println("Silnik odpala");
             System.out.println("Chodzi na wolnych obrotach");
@@ -28,6 +28,12 @@ public class Car extends Device {
                 ", value='" + value + '\'' +
                 ", colour='" + colour + '\'' +
                 '}';
+    }
+
+    @Override
+    public void turnOn() {
+
+
     }
 }
 
