@@ -1,16 +1,17 @@
 package com.company;
 
-import devices.Car;
-import devices.Phone;
+import com.company.devices.Car;
+import com.company.devices.Phone;
+
 public class Main {
 
     public static void main(String[] args) {
         Human student = new Human("Gaweł", "Grabowski", 30);
         Human teacher = new Human("Adam", "Małysz", 45);
-        Car Subaru = new Car("Legacy", "Subaru", "Black",2005);
-        Car AlfaRomeo = new Car("Alfa", "Romeo", "Black", 2020);
-        Phone iphone = new Phone("Iphone", 5.3, "ios", "White", 8);
-        Phone samsung = new Phone("Samsung", 6.0, "Android", "Black", 6);
+        Car Subaru = new Car("Subaru", "Legacy", 2005,"Black");
+        Car AlfaRomeo = new Car("Alfa Romeo", "Giulia", 2020, "Black");
+        Phone iphone = new Phone("Apple", "iphone", 2019, 5.3, 8);
+        Phone samsung = new Phone("Samsung", "Galaxy", 2019, 6.0, 6);
         Animal cat = new Animal("cat");
         Animal dog = new Animal("dog");
         System.out.println(Subaru);
@@ -24,5 +25,13 @@ public class Main {
         System.out.println("------------------------------------------");
         System.out.println(cat);
         System.out.println(dog);
+        System.out.println("------------------------------------------");
+        iphone.turnOn();
+        System.out.println("------------------------------------------");
+        samsung.turnOn();
+        System.out.println("------------------------------------------");
+        Subaru.turnOn();
+        System.out.println("------------------------------------------");
+        AlfaRomeo.turnOn();
     }
 }
