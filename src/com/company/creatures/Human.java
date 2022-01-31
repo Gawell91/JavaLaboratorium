@@ -1,9 +1,10 @@
-package com.company;
+package com.company.creatures;
 
+import com.company.creatures.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
-public class Human {
+public class Human extends Animal{
 
     public double cash;
     public String firstName;
@@ -15,10 +16,11 @@ public class Human {
     public Phone mobile;
 
 
-    public Human(String firstName, String lastName, Integer age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+    public Human() {
+        super("homo sapiens");
+        this.firstName = "";
+        this.lastName = "lastName";
+        this.age = 0;
         this.salary = 0.0;
         this.cash = 0.0;
     }
@@ -62,5 +64,15 @@ public class Human {
     }
     public String toString(){
         return "Imie: " + firstName + " Nazwisko: " + lastName + " Wiek: " + age;
+    }
+
+    @Override
+    public void Sale(Human seller, Human buyer, Double price) {
+
+    }
+
+    @Override
+    public void feed(Double foodWeight) {
+
     }
 }
